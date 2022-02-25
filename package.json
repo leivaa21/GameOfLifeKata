@@ -1,0 +1,33 @@
+{
+  "name": "gameoflife",
+  "version": "1.0.0",
+  "description": "Leivaa's resolution of the GameOfLife kata",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    
+    "dev": "ts-node-dev src/index",
+    
+    "prebuild":"rm -rf dist",
+    "build": "tsc",
+    
+    "prestart": "npm run build",
+    "start": "node dist/index"
+  },
+  "keywords": [
+    "gameoflife",
+    "kata",
+    "tdd",
+    "solid"
+  ],
+  "author": "Leivaa21",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5",
+    "ts-node-dev": "^1.1.8"
+  }
+}
